@@ -24,13 +24,27 @@ In your notebook, run the following command:
 ```python
 from graphviz_nb import render_graphviz
 
-render_graphviz("""
-digraph {
-    Hello -> World
-    Hello -> Name
-}
-""")
+render_graphviz(
+    """
+    digraph {
+        Hello -> World
+        Hello -> Name
+    }
+    """
+)
 ```
+
+(Optionally) Using graphviz library `pip install graphviz`:
+```python
+import graphviz
+from graphviz_nb import render_graphviz
+
+dot = graphviz.Digraph()
+dot.edge("Hello", "World")
+dot.edge("Hello", "Name")
+render_graphviz(dot)
+```
+
 <img width="284" height="184" alt="image" src="https://github.com/user-attachments/assets/10b97699-550f-4983-b4f5-2e600f21ee6f" />
 
 ## Render it in a Jupyter notebook
