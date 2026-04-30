@@ -5,7 +5,7 @@ import anywidget
 import traitlets
 
 try:
-    __version__ = importlib.metadata.version("graphviz-nb")
+    __version__ = importlib.metadata.version("gvrender")
 except importlib.metadata.PackageNotFoundError:
     __version__ = "unknown"
 
@@ -31,7 +31,7 @@ class render_graphviz(anywidget.AnyWidget):
 
     Examples:
         ```python
-        from graphviz_nb import render_graphviz
+        from gvrender import render_graphviz
 
         dot = render_graphviz("""
                   digraph {

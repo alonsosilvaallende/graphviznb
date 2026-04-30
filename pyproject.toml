@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "graphviz-nb"
-version = "0.0.2"
+name = "gvrender"
+version = "0.0.3"
 dependencies = ["anywidget"]
 readme = "README.md"
 

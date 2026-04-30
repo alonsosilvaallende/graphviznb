@@ -1,7 +1,7 @@
-[![PyPI version](https://badge.fury.io/py/graphviz-nb.svg)](https://badge.fury.io/py/graphviz-nb)
+[![PyPI version](https://badge.fury.io/py/gvrender.svg)](https://badge.fury.io/py/gvrender)
 [![License: MIT](https://img.shields.io/badge/License-Apache2.0-yellow.svg)](https://opensource.org/licenses/Apache2.0)
 
-# graphviz-nb
+# gvrender
 
 ## Render DOT language graphs in notebooks
 
@@ -9,20 +9,20 @@
 
 To install the package, run the following command in your environment:
 ```sh
-pip install graphviz-nb
+pip install gvrender
 ```
 
 or with [uv](https://github.com/astral-sh/uv):
 
 ```sh
-uv add graphviz-nb
+uv add gvrender
 ```
 
 ## Getting Started
 
 In your notebook, run the following command:
 ```python
-from graphviz_nb import render_graphviz
+from gvrender import render_graphviz
 
 render_graphviz(
     """
@@ -37,7 +37,7 @@ render_graphviz(
 (Optionally) Using graphviz library `pip install graphviz`:
 ```python
 import graphviz
-from graphviz_nb import render_graphviz
+from gvrender import render_graphviz
 
 dot = graphviz.Digraph()
 dot.edge("Hello", "World")

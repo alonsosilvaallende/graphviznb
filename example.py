@@ -6,7 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
-    from graphviz_nb import render_graphviz
+    from gvrender import render_graphviz
 
     render_graphviz(
         """
@@ -23,7 +23,7 @@ def _():
 def _(render_graphviz):
     # (Optionally) Using graphviz library `pip install graphviz`
     import graphviz
-    from graphviz_nb import render_graphviz
+    from gvrender import render_graphviz
 
     dot = graphviz.Digraph()
     dot.edge("Hello", "World")
