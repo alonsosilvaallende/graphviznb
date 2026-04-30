@@ -1,8 +1,18 @@
+import warnings
 import importlib.metadata
 import pathlib
 
 import anywidget
 import traitlets
+
+warnings.warn(
+    "The package 'graphviznb' has been renamed to 'graphviz-nb'. "
+    "Please update your dependencies.",
+    DeprecationWarning,
+    stacklevel=2,
+)
+
+from graphviz_nb import *
 
 try:
     __version__ = importlib.metadata.version("graphviznb")

@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "graphviznb"
-version = "0.0.0"
-dependencies = ["anywidget"]
+version = "0.0.1"
+dependencies = ["anywidget", "graphviz-nb"]
 readme = "README.md"
 
 # For projects not using `uv`, you can install these development dependencies with:
