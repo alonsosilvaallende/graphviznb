@@ -57,6 +57,6 @@ render_graphviz(dot)
 
 ## Render it in a marimo notebook or a marimo WebAssembly (WASM) notebook
 
-<img width="528" height="296" alt="graphviznb_marimo" src="https://github.com/user-attachments/assets/acf74c6d-1542-4d2c-b506-74fecda60c76" />
+<img width="272" height="295" alt="image" src="https://github.com/user-attachments/assets/af045ccb-cb42-45fa-87e7-1f6244ec12b8" />
 
 Here is a [basic example](https://marimo.app/?slug=p4ka73) of a marimo WebAssembly (WASM) notebook.
