@@ -1,37 +1,35 @@
-[![PyPI version](https://badge.fury.io/py/graphviznb.svg)](https://badge.fury.io/py/litelines)
+[![PyPI version](https://badge.fury.io/py/graphviz-nb.svg)](https://badge.fury.io/py/graphviz-nb)
 [![License: MIT](https://img.shields.io/badge/License-Apache2.0-yellow.svg)](https://opensource.org/licenses/Apache2.0)
 
-# graphviznb
+# graphviz-nb
 
-## Render DOT language graphs in notebooks without installing graphviz
+## Render DOT language graphs in notebooks
 
 ## Installation
 
 To install the package, run the following command in your environment:
 ```sh
-pip install graphviznb
+pip install graphviz-nb
 ```
 
 or with [uv](https://github.com/astral-sh/uv):
 
 ```sh
-uv pip install graphviznb
+uv add graphviz-nb
 ```
 
 ## Getting Started
 
 In your notebook, run the following command:
 ```python
-import graphviznb
+from graphviz_nb import render_graphviz
 
-w = graphviznb.Widget()
-w.source = """
+render_graphviz("""
 digraph {
     Hello -> World
     Hello -> Name
 }
-"""
-w
+""")
 ```
 <img width="284" height="184" alt="image" src="https://github.com/user-attachments/assets/10b97699-550f-4983-b4f5-2e600f21ee6f" />
 
