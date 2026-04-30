@@ -33,13 +33,15 @@ render_graphviz(
     """
 )
 ```
+<img width="284" height="184" alt="image" src="https://github.com/user-attachments/assets/10b97699-550f-4983-b4f5-2e600f21ee6f" />
+
 
 (Optionally) Using graphviz library `pip install graphviz`:
 ```python
-import graphviz
+from graphviz import Digraph
 from gvrender import render_graphviz
 
-dot = graphviz.Digraph()
+dot = Digraph()
 dot.edge("Hello", "World")
 dot.edge("Hello", "Name")
 render_graphviz(dot)
@@ -49,14 +51,14 @@ render_graphviz(dot)
 
 ## Render it in a Jupyter notebook
 
-<img width="515" height="334" alt="graphviznb" src="https://github.com/user-attachments/assets/2162bab0-02e1-4f8f-85dd-5335f03cda95" />
+<img width="274" height="275" alt="image" src="https://github.com/user-attachments/assets/2f17a62c-68d3-42ca-a6ce-7aed698fbefe" />
 
 ## Render it in a JupyterLite notebook
 
-<img width="482" height="301" alt="graphviznb_jupyterlite" src="https://github.com/user-attachments/assets/d0d065aa-2ee9-41b2-a8cf-fa6ad50855e0" />
+<img width="287" height="337" alt="image" src="https://github.com/user-attachments/assets/214c1398-ab21-49f4-bdff-6de2cc1da20e" />
 
 ## Render it in a marimo notebook or a marimo WebAssembly (WASM) notebook
 
 <img width="272" height="295" alt="image" src="https://github.com/user-attachments/assets/af045ccb-cb42-45fa-87e7-1f6244ec12b8" />
 
-Here is a [basic example](https://marimo.app/?slug=p4ka73) of a marimo WebAssembly (WASM) notebook.
+Here is a [basic example](https://marimo.app/?slug=zza2j4) of a marimo WebAssembly (WASM) notebook.
